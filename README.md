@@ -436,7 +436,6 @@ Ball *ball = [[[[Ball alloc] init] autorelease] autorelease];
 ```
 Additional:
 -----------------------------
-- Анкета в которой просят оценить свои знания по технологиям по 10 бальной шкале.
  1. Objective-C
  2. C
  3. Swift
