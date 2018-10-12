@@ -47,7 +47,8 @@ NSCoding, archiving?
 Какую проблему решает делегирование?
 Почему мы используем шаблон делегата для уведомления о событиях текстового поля?
 What is the difference Delegates and Callbacks ?
-Memory Management:
+
+# Memory Management
 
 Объявление свойств c атрибутами: retain, assign, nonatomic, readonly, copy, weak, strong, unsafe_unretained?
 Реализуйте следующие методы: retain/release/autorelease?
@@ -73,7 +74,8 @@ Atomic vs nonatomic. Чем отличаются? Как вручную пере
 Нужно ли ретейнить (посылать сообщение retain) делегаты?
 Для чего используется класс NSCoder?
 Опишите правильный способ управления памятью выделяемой под Outlet'ы?
-Networking:
+
+# Networking
 
 Преимущества и недостатки синхронного и асинхронного соединения?
 Что означает http, tcp?
@@ -83,7 +85,8 @@ REST, HTTP, JSON. Что это?
 Что такое REST (Restful)?
 Какую JSONSerialization имеет ReadingOptions?
 Объясните различия в SOAP и REST?
-Multithreading:
+
+# Multithreading
 
 Зачем мы используем synchronized?
 В чем разница между синхронным и асинхронным таском (задачей)?
@@ -110,7 +113,8 @@ NSOperation — NSOperationQueue — NSBlockOperation?
 Чем отличается dispatch_async от dispatch_sync?
 Для чего при разработке под iOS использовать POSIX-потоки? pthread_create(&thread, NULL, startTimer, (void *)t);
 А чем реально POSIX-потоки лучше чем GCD или NSOperationQueue вместе с NSOperation? Приходилось ри реально использовать POSIX и как в этом были прюсы? Реально, просто интересно… Use POSIX calls if cross-platform portability is required. If you are writing networking code that runs exclusively in OS X and iOS, you should generally avoid POSIX networking calls, because they are harder to work with than higher-level APIs. However, if you are writing networking code that must be shared with other platforms, you can use the POSIX networking APIs so that you can use the same code everywhere.
-UIKit:
+
+# UIKit
 
 Разница между свойствами bounds и frame объекта UIView? Понимание системы координат?
 Цикл жизни View Controller?
@@ -126,7 +130,8 @@ UIKit:
 Что такое UIStackView?
 Какая ваша любимая библиотека визуализации диаграмм (visualize chart library)?
 Что такое Autolayout?
-CoreData, Persistency:
+
+# CoreData, Persistency
 
 Какие есть типы хранилищ (data percistency) и какую стратегию хранения использовать в том или ином случае?
 Какие есть лимиты у JSON/PLIST?
@@ -150,7 +155,8 @@ CoreData, Persistency:
 Какие типы хранилищ поддерживает CoreData?
 Что такое ленивая загрузка (lazy loading)? Что ее связывает с CoreData? Опишите ситуация когда она может быть полезной?
 Составить SQL запрос на выборку всех проектов на которых сидит девелопер с id ==3. (Developers:id,name; Projects:id,name; Developers&Projects:project_id,developer_id)?
-CoreAnimation, CoreGraphics:
+
+# CoreAnimation, CoreGraphics
 
 Что такое CALayer?
 Чем отличается UIView от CALayer?
@@ -161,7 +167,8 @@ CoreAnimation, CoreGraphics:
 Что такое backing store?
 Чем отличаются аффинные преобразования от трехмерных?
 Нужно ли ретейнить (посылать сообщение retain) делегат для CAAnimation?
-iOS Platform:
+
+# iOS Platform
 
 Какие бывают состояния (states) у приложения?
 Жизненный цикл приложения?
@@ -186,7 +193,8 @@ iOS Platform:
 What is the biggest changes in UserNotifications?
 Как получить токен устройства (device token)?
 Какие ограничения (limits) у Remote Notifications?
-Architecture
+
+# Architecture
 
 Если вам нужно сделать рефакторинг, с чего бы вы начали?
 SOLID?
@@ -212,7 +220,8 @@ Which of the communication methods allows for a loosely coupled, one-to-many pat
 Игра в разбитые окна?
 Объясните разницу между SDK и Framework?
 В чем недостаток жесткого кодирования? (What is the disadvantage to hard-coding log statements?)
-Unit Testing
+
+# Unit Testing
 
 Что такое RGR ( Red — Green — Refactor )?
 Объясните “Arrange-Act-Assert”?
@@ -221,7 +230,8 @@ Unit Testing
 Что такое TDD?
 Что такое Continuous Integration?
 Чем отличается Mock от Stub. (mock - имитация поведения, stub - вводные данные)
-Programming:
+
+# Programming
 
 Что такое куча (heap) и стэк (stack)? В какой памяти создаются объекты, примитивные типы и блоки?
 Что такое полиморфизм?
@@ -237,7 +247,8 @@ Programming:
 Что такое объект?
 Что такое интерфейс?
 Когда и почему мы используем объект вместо структур?
-General:
+
+# General
 
 Ваше любимое видео с WWDC?
 Какое ваше любимое приложение и почему?
@@ -253,7 +264,8 @@ General:
 Вы раньше работали в качестве подрядчика?Have you worked as a contractor before?
 Что такое управление зависимостями (Dependency Management)?
 Что такое диаграммы классов UML?
-Паттерны:
+
+# Паттерны
 
 Что такое паттерн Фабрика (Factory)?
 Что такое паттерн Фасад (Facade)?
@@ -264,19 +276,23 @@ General:
 Реализация Cинглтона (Singleton) в ARC и в non-ARC?
 Назовите основные отличия синглтона от статического класса, и когда следует использовать один, а когда другой?
 Как пересоздать синглтон? Можно ли обнулить объект синглтона?
-Git:
+
+# Git
 
 В чем разница между SVN и Git?
 Какая команда Git позволяет объединить коммиты?
 Какая команда Git позволяет нам найти плохие коммиты?
 Какая команда Git сохраняет ваш код без коммита?
-Структуры данных:
+
+# Структуры данных
 
 Что такое Б-деревья (B-Trees)?
-С:
+
+# C
 
 Как представлены Си-структуры (CGRect, CGSize, CGPoint) в Objective-C?
-Algorithms:
+
+# Algorithms
 
 Напишите код, который разворачивает строку на С++. (переставить символы в строке в обратном порядке)?
 Поменять местами a и b не используя промежуточную переменную?
@@ -284,7 +300,8 @@ Algorithms:
 Решить задачку о массиве: дан массив из 1001 элемента в котором присутсвуют все числа от 1 до 1000 и одно повторяется дважды, узнать какое, если к каждому элементу можно обратиться только 1 раз?
 Как из строки вытащить подстроку?
 В массиве 1001 число в диапазоне от 1 до 1000 включительно. Лишь одно число в массиве повторяется дважды. Надо за линейное время (и обратившись к каждому числу максимум один раз) найти продублированное число.
-Logical:
+
+# Logical
 
 Есть 4 человека, каждый проходит мост за 1, 2, 5, и 10 минут соответственно. Через мост они могут переходить только парами, держась за руку и только с фонариком. Притом один должен вернуться обратно и передать фонарик. Необходимо переправить всех за 17 мин на другую сторону. Задача решаема.
 Code Puzzels:
@@ -374,7 +391,8 @@ pthread_create(&thread, NULL, startTimer, (void *)t);
     NSLog(@"D %d", [object retainCount]);
 Что произойдет при исполнении следующего кода?
 Ball *ball = [[[[Ball alloc] init] autorelease] autorelease];
-Additional:
+
+# Additional
 
 Анкета в которой просят оценить свои знания по технологиям по 10 бальной шкале.
 Objective-C
@@ -392,7 +410,8 @@ Git
 Core Animation
 Algorithms and Data Structure
 Networking
-Swift
+
+# Swift
 
 Фундаментальные типы и коллекции?
 Aттрибут @UIApplicationMain ?
@@ -402,4 +421,4 @@ Aттрибут @UIApplicationMain ?
 let vs var?
 typealias? Создание своего собственного типа?
 nil в Swift vs nil в Objective-C? Различия?
-Оператор ???
+Оператор ??
