@@ -57,6 +57,13 @@ Objective-C, Foundation:
 ```
 
 - Можно ли добавить `ivar` в категорию?
+
+```
+Class c = objc_allocateClassPair([NSObject class], "Person", 0);
+class_addIvar(c, "firstName", sizeof(id), log2(sizeof(id)), @encode(id));
+Ivar firstNameIvar = class_getInstanceVariable(c, "fistName");
+```
+
 - Когда лучше использовать `категорию`, а когда `наследование`?
 - Как имитировать `множественное наследование`?
 - Можно ли чтобы разные классы реализовывали один протокол. (ClassA, ClassB и ClassC - реализуют ClassCProtocol)?
